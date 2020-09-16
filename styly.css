@@ -1,0 +1,19 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(218, 83, 255, 1) 35%,
+    rgba(255, 108, 203, 1) 100%
+  );
+}
+
+.nadpis {
+  font-family: 'Lobster', cursive;
+}
+/*
+Barva textu #ffffff.
+Podkladová tmavě modrá #283e50.
+Tlačítko Pravidla #1fcca4. A po najetí myši #1cbb96.
+Tlačítko Začít hrát #0197f6. Po najetí #0090e9
+*/
