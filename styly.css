@@ -1,18 +1,14 @@
 body {
   color: #ffffff;
-  background: rgb(2, 0, 36);
   background: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 0 0 40px 0;
+  padding: 40px 0 40px 0;
+  display: flex;
+  justify-content: center;
 }
-img {
-  display: block;
-  width: 350px;
-  border-radius: 5px 5px 0px 0px;
-  margin: 40px 0 0 40px;
-}
+
 .opiskvorkach {
   display: flex;
   flex-direction: column;
@@ -20,7 +16,12 @@ img {
   width: 350px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
   padding: 0;
-  margin: 0 0 0 40px;
+  border-radius: 10px 10px 0px 0px;
+}
+.obrazek {
+  display: block;
+  border-radius: 10px 10px 0px 0px;
+  width: 350px;
 }
 
 .nadpis {
