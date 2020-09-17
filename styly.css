@@ -1,15 +1,82 @@
 body {
-  background: rgb(2, 0, 36);
+  background-color: pink;
+  color: #ffffff;
+  /*  background: rgb(2, 0, 36);
   background: linear-gradient(
     180deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(218, 83, 255, 1) 35%,
     rgba(255, 108, 203, 1) 100%
   );
+  background-repeat: no-repeat; */
+}
+img {
+  display: block;
+  width: 350px;
+  border-radius: 5px 5px 0px 0px;
+  margin: 40px 0 0 40px;
+}
+.opiskvorkach {
+  display: flex;
+  flex-direction: column;
+  background-color: #283e50;
+  width: 350px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+  padding: 0;
+  margin: 0 0 0 40px;
 }
 
 .nadpis {
   font-family: 'Lobster', cursive;
+  text-align: center;
+  padding: 15px;
+  margin: 20px 0 0 0;
+  font-size: 50px;
+}
+
+.popis {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+}
+
+.odkazy {
+  list-style: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.odkazy a {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  display: inline-block;
+  padding: 15px 0 15px 0;
+}
+.odkazy li {
+  border-top: 1px solid #283e50;
+}
+.pravidla {
+  background-color: #1fcca4;
+}
+
+.zacithrat {
+  background-color: #0197f6;
+}
+
+.pravidla a:hover,
+a:focus {
+  background-color: #1cbb96;
+}
+
+.zacithrat a:hover,
+a:focus {
+  background-color: #0090e9;
 }
 /*
 Barva textu #ffffff.
