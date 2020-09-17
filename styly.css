@@ -1,12 +1,7 @@
 body {
   color: #ffffff;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(218, 83, 255, 1) 35%,
-    rgba(255, 108, 203, 1) 100%
-  );
+  background: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
