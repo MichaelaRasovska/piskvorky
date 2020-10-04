@@ -14,7 +14,6 @@ body {
   flex-direction: column;
   background-color: #283e50;
   width: 350px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
   padding: 0;
   border-radius: 10px 10px 0px 0px;
 }
@@ -28,8 +27,9 @@ body {
   font-family: 'Lobster', cursive;
   text-align: center;
   padding: 15px;
-  margin: 20px 0 0 0;
-  font-size: 50px;
+  margin: 30px 0 0 0;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .popis {
@@ -41,38 +41,43 @@ body {
 }
 
 .odkazy {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .odkazy a {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   width: 100%;
-  text-align: center;
+  align-items: center;
   color: #ffffff;
-  display: inline-block;
   padding: 15px 0 15px 0;
 }
 .odkazy li {
   border-top: 1px solid #283e50;
+  width: 100%;
 }
-.pravidla {
+.tlacitko1 {
   background-color: #1fcca4;
 }
 
-.zacithrat {
+.tlacitko2 {
   background-color: #0197f6;
 }
 
-.pravidla a:hover,
+.tlacitko1 a:hover,
 a:focus {
   background-color: #1cbb96;
 }
 
-.zacithrat a:hover,
+.tlacitko2 a:hover,
 a:focus {
   background-color: #0090e9;
 }
@@ -82,3 +87,78 @@ Podkladová tmavě modrá #283e50.
 Tlačítko Pravidla #1fcca4. A po najetí myši #1cbb96.
 Tlačítko Začít hrát #0197f6. Po najetí #0090e9
 */
+
+/* Pravidla => nadpis, body, instrukce, odkazy*/
+.pravidla {
+  background-color: #283e50;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 5px 0 0;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  width: 250px;
+  font-size: 14px;
+}
+
+.svg {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 30px 50px 30px 50px;
+  margin: 0px;
+}
+
+.body li {
+  padding: 0;
+  margin: 5px 0;
+}
+
+.instrukce {
+  /* instukce => figure */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.instrukce img {
+  width: 200px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 760px) {
+  .pravidla {
+    width: 500px;
+  }
+  .instrukce {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .instrukce figure {
+    width: 150px;
+  }
+  figcaption {
+    width: 200px;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pravidla {
+    width: 500px;
+  }
+}
