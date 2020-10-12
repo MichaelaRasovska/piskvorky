@@ -3,42 +3,42 @@ body {
   background: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   padding: 40px 0 40px 0;
   display: flex;
   justify-content: center;
 }
+/* Index */
 
 .opiskvorkach {
   display: flex;
   flex-direction: column;
   background-color: #283e50;
-  width: 350px;
-  padding: 0;
   border-radius: 10px 10px 0px 0px;
+  ine-height: 20px;
+  width: 250px;
+  font-size: 14px;
 }
 .obrazek {
-  display: block;
   border-radius: 10px 10px 0px 0px;
-  width: 350px;
+  display: block;
+  width: 100%;
 }
 
 .nadpis {
   font-family: 'Lobster', cursive;
   text-align: center;
-  padding: 15px;
-  margin: 30px 0 0 0;
-  font-size: 40px;
-  font-weight: 500;
 }
 
 .popis {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 25px;
 }
+
+/* Tlačítka */
 
 .odkazy {
   display: flex;
@@ -139,6 +139,20 @@ figure {
 }
 
 @media screen and (min-width: 760px) {
+  .opiskvorkach {
+    width: 350px;
+    padding: 0;
+  }
+  .obrazek {
+    width: 350px;
+  }
+
+  .nadpis {
+    padding: 15px;
+    margin: 30px 0 0 0;
+    font-size: 40px;
+    font-weight: 500;
+  }
   .pravidla {
     width: 500px;
   }
