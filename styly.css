@@ -8,6 +8,14 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.nadpis {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  line-height: 0;
+  margin: 30px 0 10px 0;
+  font-weight: normal;
+}
 /* Index */
 
 .opiskvorkach {
@@ -15,7 +23,7 @@ body {
   flex-direction: column;
   background-color: #283e50;
   border-radius: 10px 10px 0px 0px;
-  ine-height: 20px;
+  line-height: 20px;
   width: 250px;
   font-size: 14px;
 }
@@ -23,11 +31,6 @@ body {
   border-radius: 10px 10px 0px 0px;
   display: block;
   width: 100%;
-}
-
-.nadpis {
-  font-family: 'Lobster', cursive;
-  text-align: center;
 }
 
 .popis {
@@ -102,13 +105,13 @@ Tlačítko Začít hrát #0197f6. Po najetí #0090e9
   font-size: 14px;
 }
 
-.svg {
+.svgpravidla {
   width: 1em;
   height: 1em;
   filter: invert(100%);
 }
 
-.body {
+.odrazky {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -116,7 +119,7 @@ Tlačítko Začít hrát #0197f6. Po najetí #0090e9
   margin: 0px;
 }
 
-.body li {
+.odrazky li {
   padding: 0;
   margin: 5px 0;
 }
@@ -149,7 +152,6 @@ figure {
 
   .nadpis {
     padding: 15px;
-    margin: 30px 0 0 0;
     font-size: 40px;
     font-weight: 500;
   }
@@ -175,4 +177,104 @@ figure {
   .pravidla {
     width: 500px;
   }
+}
+
+/* Hra */
+
+.hra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 80vmin;
+  color: #ffffff;
+}
+.hrac {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hrac img {
+  margin: 10px;
+  filter: invert(100%);
+}
+.kontejner {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+.deska {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.deska div {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.policko {
+  background-color: white;
+  opacity: 50%;
+  width: 10%;
+  height: 8vmin;
+  border: 0.5px solid #283e50;
+}
+.ikonky {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 55px;
+  justify-content: space-between;
+}
+
+.ikonky img {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+
+.home a:hover,
+a:focus {
+  background-color: #1cbb96;
+}
+
+.restart a:hover,
+a:focus {
+  background-color: #0090e9;
+}
+.home a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 100%;
+  align-items: center;
+  color: #ffffff;
+  background-color: #1fcca4;
+  border-radius: 10%;
+}
+
+.restart a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 100%;
+  align-items: center;
+  color: #ffffff;
+  background-color: #0197f6;
+  border-radius: 10%;
+}
+
+.policko:hover,
+:focus {
+  opacity: 70%;
 }
