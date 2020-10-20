@@ -229,6 +229,7 @@ figure {
   width: 10%;
   height: 8vmin;
   border: 0.5px solid #283e50;
+  position: relative;
 }
 .ikonky {
   display: flex;
@@ -277,4 +278,19 @@ a:focus {
 .policko:hover,
 :focus {
   opacity: 70%;
+}
+
+/* ÚKOL 4. STYLOVÁNÍ */
+
+.board__field--circle {
+  background-image: url(img/circle.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.board__field--cross {
+  background-image: url(img/cross.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
 }
