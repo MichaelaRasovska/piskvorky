@@ -16,6 +16,10 @@ const game = (event) => {
     naTahu = 'cross';
     event.target.setAttribute('disabled', true);
     isWinningMove(event.target);
+    if (isWinningMove(event.target)) {
+      window.confirm(`Vyhrálo kolečko!`);
+      location.reload();
+    }
   } else if (
     naTahu === 'cross' &&
     !event.target.classList.contains('board__field--circle') &&
@@ -27,11 +31,11 @@ const game = (event) => {
     naTahu = 'circle';
     event.target.setAttribute('disabled', true);
     isWinningMove(event.target);
+    if (isWinningMove(event.target)) {
+      window.confirm(`Vyhrál křížek!`);
+      location.reload();
+    }
   }
-
-  console.log('Get position', getPosition(event.target));
-  console.log('Get symbol', getSymbol(event.target));
-  console.log('Winning', isWinningMove(event.target));
 };
 
 for (let i = 0; i < fieldElm.length; i += 1) {
@@ -56,7 +60,7 @@ const getPosition = (field) => {
 };
 
 const getField = (row, column) => {
-  fieldElm[row * boardSize + column];
+  return fieldElm[row * boardSize + column];
 };
 
 const getSymbol = (field) => {
